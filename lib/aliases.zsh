@@ -1,3 +1,5 @@
+# Aliases for (almost only) built-in commands
+
 # Push and pop directories on directory stack
 alias pu='pushd'
 alias po='popd'
@@ -9,8 +11,6 @@ alias -- -='cd -'
 # Super user
 alias _='sudo'
 
-#alias g='grep -in'
-
 # Show history
 alias history='fc -l 1'
 
@@ -19,5 +19,3 @@ alias lsa='ls -lah'
 alias l='ls -la'
 alias ll='ls -l'
 alias sl=ls # often screw this up
-
-alias afind='ack-grep -il'
