@@ -1,5 +1,5 @@
 # Aliases
-alias gs='git status'
+alias gs='git status -sb'
 alias gf='git fetch'
 alias gl='git pull'
 alias gup='git fetch && git rebase'
