@@ -6,9 +6,8 @@ function box_name {
     [ -f ~/.box-name ] && cat ~/.box-name || hostname -s
 }
 
-RPROMPT='%{$fg[yellow]%}rvm:%{$fg_bold[green]%}$(rvm-prompt i v p)%{$fg[magenta]%}$(rvm-prompt g)%{$reset_color%}% '
 PROMPT='
-%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}$(box_name)%{$reset_color%} in %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info)
+%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}$(box_name)%{$reset_color%} in %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info)%{$reset_color%} using %{$fg_bold[green]%}$(rvm-prompt i v p)%{$fg[magenta]%}$(rvm-prompt g)%{$reset_color%}
 $(virtualenv_info)$ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
