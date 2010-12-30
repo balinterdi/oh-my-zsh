@@ -14,7 +14,6 @@ function box_name {
     [ -f ~/.box-name ] && cat ~/.box-name || hostname -s
 }
 
-RPROMPT='%{$fg[yellow]%}rvm:%{$fg_bold[green]%}$(rvm-prompt i v p)%{$fg[magenta]%}$(rvm-prompt g)%{$reset_color%}% '
 PROMPT='
 %{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}$(box_name)%{$reset_color%} in %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
 $(virtualenv_info)$ '
