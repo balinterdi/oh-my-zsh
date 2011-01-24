@@ -20,5 +20,6 @@ alias l='ls -la'
 alias ll='ls -l'
 alias sl=ls # often screw this up
 
-# processes
+# Processes
 alias kp='ps aux'
+
