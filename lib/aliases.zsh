@@ -22,4 +22,4 @@ alias sl=ls # often screw this up
 
 # Processes
 alias kp='ps aux'
-
+alias kpa='ps aux | ack '
