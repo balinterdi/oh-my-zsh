@@ -32,6 +32,8 @@ alias gcp='git cherry-pick'
 compdef _git gcp=git-cherry-pick
 alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
+alias glo='git log --oneline'
+compdef _git glo=git-log
 
 #
 # Will return the current branch name
