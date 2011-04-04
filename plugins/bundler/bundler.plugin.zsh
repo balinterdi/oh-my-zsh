@@ -1,3 +1,5 @@
-alias be="bundle exec"
-alias bi="bundle install"
+alias b="bundle"
+alias bi="bundle install --path vendor"
 alias bu="bundle update"
+alias be="bundle exec"
+alias binit="bundle install && bundle package && echo 'vendor/ruby' >> .gitignore"
