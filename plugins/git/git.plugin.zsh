@@ -13,19 +13,18 @@ alias gp='git push'
 compdef _git gp=git-push
 alias gd='git diff'
 compdef _git gd=git-diff
-alias gdv='git diff -w "$@" | vim -R -'
-compdef gdv=git
-
+gdv() { git-diff -w "$@" | view - }
+compdef _git gdv=git-diff
 alias gc='git commit -v'
-compdef gc=git
+compdef _git gc=git-commit
 alias gca='git commit -v -a'
-compdef gca=git
+compdef _git gca=git-commit
 alias gco='git checkout'
 compdef _git gco=git-checkout
 alias gb='git branch'
 compdef _git gb=git-branch
 alias gba='git branch -a'
-compdef gba=git
+compdef _git gba=git-branch
 alias gcount='git shortlog -sn'
 compdef gcount=git
 alias gcp='git cherry-pick'
