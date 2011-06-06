@@ -15,6 +15,9 @@ for plugin ($plugins) fpath=($ZSH/plugins/$plugin $fpath)
 autoload -U compinit
 compinit -i
 
+# Load all of your custom configurations from custom/
+for config_file ($ZSH/custom/*.zsh) source $config_file
+
 # Load all of the plugins that were defined in ~/.zshrc
 for plugin ($plugins); do
   if [ -f $ZSH/custom/plugins/$plugin/$plugin.plugin.zsh ]; then
@@ -23,9 +26,6 @@ for plugin ($plugins); do
     source $ZSH/plugins/$plugin/$plugin.plugin.zsh
   fi
 done
-
-# Load all of your custom configurations from custom/
-for config_file ($ZSH/custom/*.zsh) source $config_file
 
 # Load the theme
 # Check for updates on initial load...
