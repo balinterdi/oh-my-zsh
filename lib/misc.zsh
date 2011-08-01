@@ -34,9 +34,6 @@ alias oo='open .'
 ## Quick-look a file (^C to close)
 alias ql='qlmanage -p 2>/dev/null'
 
-## Start a local SMTP server and dump emails sent to it to the console
-alias smtpconsole='python -m smtpd -n -c DebuggingServer localhost:1025'
-
 ## Serve the current folder on port 80
 alias serve_this='python -m SimpleHTTPServer'
 
@@ -50,13 +47,3 @@ alias history='fc -l 1'
 ## Examples: http://rubyurl.com/ZXv
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
-
-# What the hell did I do the other day?
-function whatthehelldididoon() {
-    for repo in `find . -name '.hg'`
-    do
-        echo $repo
-        hg .. -R $repo/.. -d "$1" -u 'Steve Losh'
-    done
-}
-

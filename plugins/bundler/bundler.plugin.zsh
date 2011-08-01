@@ -3,6 +3,7 @@ alias bi="bundle install --path vendor"
 alias bu="bundle update"
 alias be="bundle exec"
 alias binit="bundle install && bundle package && echo 'vendor/ruby' >> .gitignore"
+alias bp="bundle package"
 
 # The following is based on https://github.com/gma/bundler-exec
 

@@ -37,6 +37,8 @@ alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias glo='git log --oneline --max-count=5'
 compdef _git glo=git-log
+alias glgg='git log --graph --max-count=5'
+compdef _git glgg=git-log
 
 #
 # Will return the current branch name
