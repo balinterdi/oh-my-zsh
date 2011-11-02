@@ -1,7 +1,5 @@
 # Shortcuts (e.g. ~dexter)
-dotfiles=/Users/rgabo/.dotfiles
-ohmyzsh=/Users/rgabo/.oh-my-zsh
-dexter=/Users/rgabo/code/sspinc/dexter
-bubbles=/Users/rgabo/code/sspinc/bubbles
-blossom=/Users/rgabo/code/sspinc/blossom
-cartman=/Users/rgabo/code/sspinc/cartman
+dotfiles=/Users/balint/.dotfiles
+ohmyzsh=/Users/balint/.oh-my-zsh
+
+alias repl='NODE_NO_READLINE=1 rlwrap -w-40 -p Green -C node jake console'
