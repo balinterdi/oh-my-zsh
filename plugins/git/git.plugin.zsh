@@ -39,6 +39,12 @@ alias glo='git log --oneline --max-count=5'
 compdef _git glo=git-log
 alias glgg='git log --graph --max-count=5'
 compdef _git glgg=git-log
+alias gss='git status -s'
+compdef _git gss=git-status
+alias ga='git add'
+compdef _git ga=git-add
+alias gm='git merge'
+compdef _git gm=git-merge
 
 #
 # Will return the current branch name
