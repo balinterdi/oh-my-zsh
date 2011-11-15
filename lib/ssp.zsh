@@ -1,3 +1,3 @@
 # tasks management
-[[ -f ~/Dropbox/SSP/Tasks/setup_aliases.sh ]] && source ~/Dropbox/SSP/Tasks/setup_aliases.sh
+[[ -f ~/Dropbox/SSP/Tasks/setup_aliases.zsh ]] && source ~/Dropbox/SSP/Tasks/setup_aliases.zsh
 
